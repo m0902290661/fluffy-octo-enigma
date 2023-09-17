@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大方管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>大方庫存管理系统</h1>
+        <p style="color: red;">請注意!!網站測試中，更新時資料將刷新</p>
+    </header>
+    <section class="inventory">
+        <h2>庫存列表</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>品名</th>
+                    <th>數量</th>
+                    <th>單價</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 这里将用JavaScript动态生成库存列表 -->
+            </tbody>
+        </table>
+    </section>
+    <section class="add-item">
+        <h2>添加庫存</h2>
+        <form id="addItemForm">
+            <label for="productName">品名：</label>
+            <input type="text" id="productName" required>
+            <label for="productQuantity">數量</label>
+            <input type="number" id="productQuantity" required>
+            <label for="productPrice">單價：</label>
+            <input type="number" id="productPrice" step="0.01" required>
+            <button type="submit">添加</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+    <hr>
+    <!-- ...（之前的HTML内容）... -->
+<section class="delete-item">
+    <h2>删除庫存</h2>
+    <form id="deleteItemForm">
+        <label for="deleteProductName">品名：</label>
+        <input type="text" id="deleteProductName" required>
+        <button type="submit">删除庫存</button>
+    </form>
+</section>
+<hr>
+<section class="search-item">
+    <h2>查庫存</h2>
+    <form id="searchItemForm">
+        <label for="searchProductName">品名：</label>
+        <input type="text" id="searchProductName" required>
+        <button type="submit">查詢</button>
+    </form>
+</section>
+<!-- ...（之后的HTML内容）... -->
+<hr>
+
+<div class="d0">
+<small>&copy;許元洧製作</small>
+</div>
+
+</body>
+</html>
